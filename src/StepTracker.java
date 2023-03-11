@@ -28,7 +28,7 @@ class StepTracker {
         }
         System.out.println("Введите количество шагов");
         int steps = scanner.nextInt();
-        if (steps < 0) {
+        if (steps <= 0) {
             System.out.println("Введите корректное число");
             return;
         }
@@ -47,7 +47,7 @@ class StepTracker {
     void printStatistic() {
         System.out.println("Введите число месяца");
         int month = scanner.nextInt();
-        if (month <= 0 || month > 13) {
+        if (month <= 0 || month >= 13) {
             System.out.println("Введите корректное число");
         } else {
             MonthData monthData = monthToData[month-1];//
