@@ -4,6 +4,6 @@ class Converter{
     }
 
     int convertStepsToKilocalories(int steps){
-        return (steps * 50)/100000;
+        return (steps * 50)/1000;
     }
 }
